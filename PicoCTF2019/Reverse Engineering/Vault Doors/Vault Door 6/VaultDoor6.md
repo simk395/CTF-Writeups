@@ -58,7 +58,7 @@ This will come very useful for solving the password.
 ![Vault Door 6 Script](./images/vd6_python_script.png)
 <br><br>
 
-Now that we know how XOR works, we can make a program to iterate through all of the bytes they used. Using the properties of XOR, we can find the hex that was in `passBytes[i]`. Afterwards, we can parse it into a hex value and find the character that was inputted by the user. Once the loops is done, it will have appended all the characters into a string giving us the password **n0t_mUcH_h4rD3r_tH4n_x0r_3ce2919**. Lets test the password out in the usual format.<br><br>
+Now that we know how XOR works, we can make a program to iterate through all of the bytes they used. Using the properties of XOR, we can find the hex that was in `passBytes[i]` by doing `i ^ 0x55`. Afterwards, we can parse it into a hex value and find the character that was inputted by the user. Once the loops is done, it will have appended all the characters into a string giving us the password **n0t_mUcH_h4rD3r_tH4n_x0r_3ce2919**. Lets test the password out in the usual format.<br><br>
 
 ![Vault Door 6 Access Granted](./images/vd6_access_granted.png)
 <br><br>
