@@ -12,10 +12,12 @@ It looks like the minions have encoded their password using different bases. It 
 
 ### Method 1: Matching values with an ASCII table
 ![Vault Door 4 ASCII Table](./images/vd4_ascii_table.png)
+<br>
 Here we can see all the decimal, hexadecimal, and octal values given for every ASCII character. If we compare the data with the table one by one, we get **jU5t_4_bUnCh_0f_bYt3s_f4a8cd8f7e**. However, there is a better way to solve this.
 
 ### Method 2: Decoding with a Python script
 ![Vault Door 4 Script](./images/vd4_scipt_program.png)
+<br>
 Using Python, I can automate this task with a few basic tricks. First, I have taken the data from source code and have iterated over every index. During each iteration, the value is converted to a character and appended to the string. At the end, the string will be shown in our terminal. Lets give it a run.
 
 ![Vault Door 4 Script Test](./images/vd4_script_test.png)
