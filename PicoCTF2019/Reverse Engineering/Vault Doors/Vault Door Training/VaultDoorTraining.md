@@ -1,5 +1,5 @@
 # Vault Door Training
-In this challenge, we review some Java code.
+In this challenge, we review some Java code.<br>
 
 ![Vault Door Training Code](./images/vdtsnippet.png)
 
