@@ -1,6 +1,6 @@
 # Vault Door 3
 
-This is a continuation of the Vault Door Challenges. <br>
+*This is a continuation on the Vault Door Challenges.* <br>
 
 It looks like the checkPassword Algorithm has changed once again and the base code is still the same. Let's take a look at it. 
 
@@ -15,7 +15,7 @@ It looks like these minions are now using loops to generate a password and the p
 ![Vault Door 3 Lines 23 - 27](./images/vd3_23_27.png)
 <br>
 This tells us that the password must be exactly 32 characters in length that is stored in an array. This means our starting point would look like this using an excel sheet to represent our array:
-
+<br>
 ![Vault Door 3 Array Start](./images/vd3_array_start.png)
 
 ### Lines 29 - 31
@@ -26,6 +26,7 @@ Since we are reversing **jU5t_a_sna_3lpm12g94c_u_4_m7ra41**, we will assume this
 
 ### Lines 32 - 34
 ![Vault Door 3 Lines 32 - 34](./images/vd3_32_34.png)
+<br>
 Once again we see 'i' being incremented by 1, but there is a twist. The character being checked is not the same as i. In fact, it looks like the character being checked is going in the reverse direction of 'i'. We can get the range by subtracting the min and max values from 23. In this case, it is 8 and 15. We know this because we left off with `i = 8` from the previous loop and this loop only goes up to 15. Therefore our range must be `23-15` to `23-8` which is 8 - 15 but remember we are looking at the string from right to left so, it is actually 15 to 8. For example, index 8 will store the character at 15, index 9 will store the character at 14, index 10 will store character at 13, and etc. This our array will look like:
 <br>
 ![Vault Door 3 After Second Loop](./images/vd3_array_after_second_loop.png)
@@ -33,7 +34,7 @@ Once again we see 'i' being incremented by 1, but there is a twist. The characte
 ### Lines 35 - 37
 
 ![Vault Door 3 Lines 35 - 37](./images/vd3_35_37.png)
-
+<br>
 This time around we see that 'i' is incrementing by 2. Since 'i' is being used to access the buffer, it will also affect what index is storing values. This means that not only are only looking at even numbers from 16 - 30, but the indexes we save the characters will be only the even numbers from 16 - 30 (16,18,20,22,24,26,28,and 30). We can also see that it is being read in reverse like from the previous loop in lines 32 - 34 because of `password.charAt(46-i)`. Therefore, our array looks like:
 
 ![Vault Door 3 After Third Line](./images/vd3_after_third_loop.png)
@@ -47,6 +48,7 @@ Finally, the last loop starts at the end and decrements by 2. However, if we kee
 ![Vault Door 3 After Fourth Loop](./images/vd3_after_fourth_loop.png)
 <br>
 If we read from top to bottom, we can see that it spells **jU5t_a_s1mpl3_an4gr4m_4_u_c79a21**. Lets try it out with the format which it will be **picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_c79a21}**.
+<br>
 
 ![Vault Door 3 Access Granted](./images/vd3_access_granted.png)
 <br>

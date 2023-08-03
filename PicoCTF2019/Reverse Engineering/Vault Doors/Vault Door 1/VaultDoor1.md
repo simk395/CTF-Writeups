@@ -13,6 +13,7 @@ It looks like the new password should be 32 characters in length and it is check
 <br>
 Now we can just read straight down to see that the password is 
 **d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4**. Since the base code is the same, we need to submit it in the same format as last time which is `picoCTF{}`. The password should be **picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_f6daf4}**. Let's give it a try. 
+<br>
 
 ![Vault Door 1 Access Granted](./images/vd1_access_granted.png)
 <br>
