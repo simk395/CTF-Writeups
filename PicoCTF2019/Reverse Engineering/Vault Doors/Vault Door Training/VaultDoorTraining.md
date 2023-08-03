@@ -10,15 +10,15 @@ Let's break the code down and see what it is doing exactly:
 4. Line 23 - 26: checkPassword returns a bool and it is true if the password matches **w4rm1ng_Up_w1tH_jAv4_3808d338b46**
 ---
 Now that we know what the code is doing, we can see that the password is in the clear which is **w4rm1ng_Up_w1tH_jAv4_3808d338b46**. Let's enter it to try and gain access.
-<br>
+<br><br>
 ![Vault Door Training Access Denied](./images/vdt_access_denied.png)
-<br>
+<br><br>
 Huh? I thought that was the password. The minion even said the password is below. Why am I getting "Access Denied"? 
 
-To find the answer to this, we have to take a clear inspection of line 9: <br> 
+To find the answer to this, we have to take a clear inspection of line 9: <br><br> 
 `String input = userInput.substring("picoCTF{".length(),userInput.length()-1)` <br><br>
 Notice that the input starts from after `picoCTF{` and before the `last character in the string`. This means if we enter **w4rm1ng_Up_w1tH_jAv4_3808d338b46**, then the program will store **p_w1tH_jAv4_3808d338b4** instead. We know they don't match. This must mean the password is in some format of **picoCTF{xyz}**. Let's try **picoCTF{w4rm1ng_Up_w1tH_jAv4_3808d338b46}**.
-<br>
+<br><br>
 ![Vault Door Training Access Granted](./images/vdt_access_granted.png)
-<br>
+<br><br>
 Success!
