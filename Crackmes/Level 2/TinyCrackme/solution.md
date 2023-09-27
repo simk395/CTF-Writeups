@@ -16,7 +16,7 @@ Ghidra will show where the string is stored. Using a crossreferencing can lead t
 
 Analyzing the function will show that the mechanism to checking the password is in the main function. However, it's difficult to follow the through with it.
 
-Taking a look at the assembly code, it shows that the password is stored in EDX and the string we entered is stored in ECX. Let's open up a debugger to check out what is stored in ECX.
+Taking a look at the assembly code, it shows that the password is stored in EDX and the string we entered is stored in EDX. Let's open up a debugger to check out what is stored in ECX.
 
 ![Register Values](./images/register_values.png)
 
