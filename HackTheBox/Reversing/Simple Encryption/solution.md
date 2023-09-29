@@ -87,5 +87,6 @@ int main(){
     fclose(flag);
     return 0;
 }
-
 ```
+
+Running the program on Windows will print garbage out but when printing in Linux will show the flag.
