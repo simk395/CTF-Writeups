@@ -16,7 +16,7 @@ We can see here that the owner of this image is someone named OWoodFlint. Google
 
     Answer: Cat
 
-2. What city is this person in?
+### 2. What city is this person in?
 
 Taking the BSSID from the Twitter post and applying to a ``Wigle.net`` search will inform you that the person is from London.
 
@@ -24,13 +24,13 @@ Taking the BSSID from the Twitter post and applying to a ``Wigle.net`` search wi
 
     Answer: London
 
-3. What is the SSID of the WAP he connected to?
+### 3. What is the SSID of the WAP he connected to?
 
 Taking a glance at the `Wigle` search again, it will show that the SSID is UnlieverWiFi
 
     Answer: UnlieverWifi
 
-4. What is his personal email address?
+### 4. What is his personal email address?
 
 There are 2 other pages related to OWoodFlint, a GitHub and a WordPress page. Let's take a look at the GitHub Page.
 
@@ -40,11 +40,11 @@ It looks like the email is in plain sight.
 
     Answer: OWoodFlint@gmail.com
 
-5. What site did you find their email address on?
+### 5. What site did you find their email address on?
 
     Answer: GitHub
 
-6. Where has he gone on holiday?
+### 6. Where has he gone on holiday?
 
 Let's take a look at their last webpage, the WordPress Page. It looks like they mentioned that they are on vacation in New York.
 
@@ -52,7 +52,7 @@ Let's take a look at their last webpage, the WordPress Page. It looks like they 
 
     Answer: New York
 
-7. What is the person's password?
+### 7. What is the person's password?
 
 Lastly, lets take a look at the source code.
 
